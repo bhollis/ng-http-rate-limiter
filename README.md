@@ -4,7 +4,7 @@
 
 This code was extracted from [Destiny Item Manager](https://github.com/DestinyItemManager/DIM), and is intended for use with Angular 1.
 
-[![NPM version](https://badge.fury.io/js/ng-http-rate-limiter.png)](http://badge.fury.io/js/ng-http-rate-limiter) [![Bower version](https://badge.fury.io/bo/ng-http-rate-limiter.png)](http://badge.fury.io/bo/ng-http-rate-limiter) [![Build Status](https://api.travis-ci.org/bhollis/ng-http-rate-limiter.png)](https://travis-ci.org/bhollis/ng-http-rate-limiter)
+[![NPM version](https://img.shields.io/npm/v/ng-http-rate-limiter.svg)](https://www.npmjs.com/package/ng-http-rate-limiter) [![Bower version](https://img.shields.io/bower/v/ng-http-rate-limiter.svg)](http://bower.io/search/?q=ng-http-rate-limiter) [![Build Status](https://img.shields.io/travis/bhollis/ng-http-rate-limiter.svg)](https://travis-ci.org/bhollis/ng-http-rate-limiter)
 
 # Usage
 
