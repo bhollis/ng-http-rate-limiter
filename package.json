@@ -1,6 +1,6 @@
 {
   "name": "ng-http-rate-limiter",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "$http rate limiting in Angular",
   "main": "ng-http-rate-limiter.js",
   "scripts": {
@@ -19,21 +19,9 @@
   "license": "MIT",
   "devDependencies": {
     "grunt": "~1.0.0",
-    "grunt-contrib-watch": "~1.0.0",
     "grunt-contrib-jshint": "~1.0.0",
     "grunt-contrib-uglify": "~1.0.0",
-    "grunt-jasmine-node": "~0.3.1",
     "grunt-contrib-copy": "~1.0.0",
-    "grunt-banner": "~0.6.0",
-    "jasmine-node": "1.14.1"
-  },
-  "dependencies": {
-    "grunt": "^1.0.1",
-    "grunt-banner": "^0.6.0",
-    "grunt-contrib-copy": "^1.0.0",
-    "grunt-contrib-jshint": "^1.0.0",
-    "grunt-contrib-uglify": "^1.0.1",
-    "grunt-contrib-watch": "^1.0.0",
-    "grunt-jasmine-node": "^0.3.1"
+    "grunt-banner": "~0.6.0"
   }
 }
