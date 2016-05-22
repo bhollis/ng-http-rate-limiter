@@ -1,0 +1,17 @@
+{
+  "name": "ng-http-rate-limiter",
+  "version": "1.0.0",
+  "authors": [
+    "Ben Hollis <ben@benhollis.net>"
+  ],
+  "main": "ng-http-rate-limiter.js",
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests",
+    "demos"
+  ]
+}
