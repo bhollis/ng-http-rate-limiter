@@ -48,4 +48,5 @@ module.exports = function(grunt) {
   grunt.loadNpmTasks('grunt-banner');
 
   grunt.registerTask('default', ['jshint', 'copy', 'uglify', 'usebanner']);
+  grunt.registerTask('test', ['jshint']);
 };
