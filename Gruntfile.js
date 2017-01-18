@@ -29,24 +29,17 @@ module.exports = function(grunt) {
         }
       }
     },
-    jshint: {
-      // define the files to lint
-      files: ['Gruntfile.js', '<%= pkg.name %>.js', 'ng-<%= pkg.name %>.js', 'test/**/*.js'],
-      // configure JSHint (documented at http://www.jshint.com/docs/)
-      options: {
-        // more options here if you want to override JSHint defaults
-        globals: {
-          module: true
-        }
-      }
+
+    eslint: {
+        src: ["ng-http-rate-limiter.js"]
     }
   });
 
   grunt.loadNpmTasks('grunt-contrib-copy');
   grunt.loadNpmTasks('grunt-contrib-uglify');
-  grunt.loadNpmTasks('grunt-contrib-jshint');
+  grunt.loadNpmTasks("gruntify-eslint");
   grunt.loadNpmTasks('grunt-banner');
 
-  grunt.registerTask('default', ['jshint', 'copy', 'uglify', 'usebanner']);
-  grunt.registerTask('test', ['jshint']);
+  grunt.registerTask('default', ['eslint', 'copy', 'uglify', 'usebanner']);
+  grunt.registerTask('test', ['eslint']);
 };

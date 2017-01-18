@@ -1,4 +1,4 @@
-(function (root, factory) {
+(function(root, factory) {
   if (typeof module !== 'undefined' && module.exports) {
     // CommonJS
     if (typeof angular === 'undefined') {
@@ -6,7 +6,6 @@
     } else {
       factory(angular);
     }
-    module.exports = 'ngDialog';
   } else if (typeof define === 'function' && define.amd) {
     // AMD
     define(['angular'], factory);
@@ -14,12 +13,11 @@
     // Global Variables
     factory(root.angular);
   }
-}(this, function (angular) {
+})(this, function(angular) {
   "use strict";
 
   angular.module("ngHttpRateLimiter", [])
     .factory("ngHttpRateLimiterQueue", ["$timeout", "$window", function rateLimiterQueue($timeout, $window) {
-
       function RateLimiterQueue(pattern, requestLimit, timeLimit) {
         this.pattern = pattern;
         this.requestLimit = requestLimit;
@@ -91,7 +89,7 @@
       }
 
       return RateLimiterQueueFactory;
-  }])
+    }])
 
   .provider("ngHttpRateLimiterConfig", function rateLimiterConfig() {
     var limiterConfig = [];
@@ -117,13 +115,12 @@
         }
       };
     }];
-
   })
 
   .factory("ngHttpRateLimiterInterceptor", ["$q", "ngHttpRateLimiterConfig", function rateLimiterInterceptor($q, rateLimiterConfig) {
     return {
       request: function(config) {
-        var limiter = _.find(rateLimiterConfig.getLimiters(), function(l) {
+        var limiter = rateLimiterConfig.getLimiters().find(function(l) {
           return l.matches(config.url);
         });
 
@@ -136,7 +133,5 @@
         }
       }
     };
-
   }]);
-
-}));
+});
