@@ -6,6 +6,7 @@
     } else {
       factory(angular);
     }
+    module.exports = 'ngHttpRateLimiter';
   } else if (typeof define === 'function' && define.amd) {
     // AMD
     define(['angular'], factory);
