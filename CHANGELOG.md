@@ -1,3 +1,9 @@
+1.0.3
+-----
+
+* As a CommonJS module, this exports its module name.
+* Remove requirement of having Array#find available.
+
 1.0.2
 -----
 
