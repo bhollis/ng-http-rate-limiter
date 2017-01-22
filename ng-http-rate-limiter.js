@@ -121,9 +121,14 @@
   .factory("ngHttpRateLimiterInterceptor", ["$q", "ngHttpRateLimiterConfig", function rateLimiterInterceptor($q, rateLimiterConfig) {
     return {
       request: function(config) {
-        var limiter = rateLimiterConfig.getLimiters().find(function(l) {
-          return l.matches(config.url);
-        });
+        var limiters = rateLimiterConfig.getLimiters();
+        var limiter;
+        for (var i = 0; i < limiters.length; i++) {
+          if (limiters[i].matches(config.url)) {
+            limiter = limiters[i];
+            break;
+          }
+        }
 
         if (limiter) {
           var deferred = $q.defer();
