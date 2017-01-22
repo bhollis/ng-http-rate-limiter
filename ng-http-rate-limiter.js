@@ -2,11 +2,10 @@
   if (typeof module !== 'undefined' && module.exports) {
     // CommonJS
     if (typeof angular === 'undefined') {
-      factory(require('angular'));
+      module.exports = factory(require('angular'));
     } else {
-      factory(angular);
+      module.exports = factory(angular);
     }
-    module.exports = 'ngHttpRateLimiter';
   } else if (typeof define === 'function' && define.amd) {
     // AMD
     define(['angular'], factory);
@@ -140,4 +139,6 @@
       }
     };
   }]);
+
+  return 'ngHttpRateLimiter';
 });

@@ -1,6 +1,6 @@
 {
   "name": "ng-http-rate-limiter",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "$http rate limiting in Angular",
   "main": "ng-http-rate-limiter.js",
   "scripts": {

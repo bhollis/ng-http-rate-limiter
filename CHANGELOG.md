@@ -1,3 +1,8 @@
+1.0.4
+-----
+
+* As an AMD module, this exports its module name.
+
 1.0.3
 -----
 
